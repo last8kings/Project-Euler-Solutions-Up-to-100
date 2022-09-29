@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-void d() { cout << "DEBUG\n";}
-
 int main() {
 
     vector<int> SumOfDivisors(28124, 0);
