@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
-
-
 int main() {
 
     vector<bool> IsPrime(1000001, true);
