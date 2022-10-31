@@ -12,7 +12,7 @@ void sieve() {
             for (int j = 2 * i; j <= N; j += i) {
                 isPrime[j] = false;
             }
-            primes.push_back(i);
+            primes.emplace_back(i);
         }
     }
 }
@@ -21,7 +21,7 @@ int main() {
     primes.reserve(1000000);
     memset(isPrime, true, sizeof(isPrime));
     sieve();
-    long long SumOfPrimes = 0;
+    int64_t SumOfPrimes = 0;
     for (auto x : primes) {
         SumOfPrimes += x;
     }
