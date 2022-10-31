@@ -23,22 +23,7 @@ int main() {
     {20, 69, 36, 41, 72, 30, 23, 88, 34, 62, 99, 69, 82, 67, 59, 85, 74, 4, 36, 16 },
     {20, 73, 35, 29, 78, 31, 90, 1, 74, 31, 49, 71, 48, 86, 81, 16, 23, 57, 5, 54 },
     {1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52, 1, 89, 19, 67, 48 }};
-    //ewwww 0-based indexing, but I had to do it since otherwise I would have to work with +4 based indexing
-    /* Also if your curious, it would obviously take way too long to type that by hand so I wrote a program to do it. read() is a custom input
-       function I stole from codeforces.com/profile/MeliodasIRA. (You can find it in his submissions as part of his template).
-       I did a little manual labor at the end and added the first and last brackets and removed the last comma.
-
-        for (int i = 1; i <= 20; ++i) {
-            cout << "{";
-            for (int j = 1; j < 20; ++j) {
-                int x = read();
-                cout << x << ", ";
-            }
-            cout << read() << " },\n";
-        }
-
-
-       */
+   
     int MaxProd = 0;
     for (int i = 0; i < 20; ++i) {
         for (int j = 0; j < 20; ++j) {
@@ -68,6 +53,6 @@ int main() {
             MaxProd = max({MaxProd, down, right, diagr, diagl});
         }
     }
+    
     cout << MaxProd << '\n';
-
 }
